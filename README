@@ -1,0 +1,98 @@
+Frontend del proyecto CODE-UFPS:
+
+Indicaciones:
+
+* Inicialmente habran dos ramas creadas, master y dev. En master solo estaran features funcionales, por lo tanto el desarrollo se hara en dev.
+* Cuando vayamos a empezar debemos clonar el proyecto, y movernos a la rama dev, alli hacemos pull para traer todas las actulizaciones anteriores hechas a esa rama.
+* Lo recomendable es que una vez actulizada la rama, creemos una rama propia con el nombre de la funcionalidad que haremos. Una vez terminadas, mezclamos con dev.
+  Lo anterior se hace para evitar conflictos en los mismos archivos, y ademas, varias personas pueden trabajar en funcionalidades distintas sin depender de los cambios de otro.
+* Cuando ya este mezclada nuestra rama con dev, se elimina dicha rama y se vuelve al punto de partida, haciendo pull a dev etc.
+* El merge entre dev y master solo lo hara una sola persona, para evitar errores.
+
+Recomendaciones: 
+* Si hay conflictos entre ramas, se puede utilizar GitKraken para verlos mas facilmente.
+* Si alguna persona desea, despues de terminar su funcionalidad puede dirigirse a mi (Gerson Guerero🤟🏽) y nos colaboramos.
+* Tener en cuenta los siguientes comandos:
+
+  - Comprobar el estado del repositorio
+    git status
+
+  - Meter archivos al staging o en otras palabras,hacer que git reconosca nuevos archivos añadidos.
+    git add .
+
+  - Sacar o quitar modificacion archivos del  staging o en otras palabras, hacer que git no lo tenga en cuenta.
+    git reset HEAD <nombre_del archivo>	//este nombre debe llevar la extension.
+
+  - Eliminar todos los cambios de un archivo siempre y cuando no esten en staging
+    git checkout --<nombre del archivo>	//este nombre debe llevar la extension.
+
+  - Hacer un commit(confirmar un cambio[borrado,añadido o modificado])
+    git commit -m "añade los primeros archivos"
+
+  - El archivo .gitignore nos permite añadir alli todo archivo que no queremos que reconozca git, de la siguiente manera:
+  -	los archivos normales : nombre_archivo.js 
+  -	las carpetas : nombre_carpeta/	
+
+  - Con el siguiente comando podemos ver todos los commits que se han hecho hasta el momento.
+    git log
+
+  - Para ir a commits anteriores:
+  - Debemos primero ir a ver el hash del commit que se requiere con:
+    git log
+  - Luego lo siguiente:
+    git checkout <parte_del_hash_copiado>
+
+  - Crear nueva rama:
+    git checkout -b <nombre_rama>
+
+  - Mostrar todas las ramas(la actual se señala con un *):
+    git branch
+
+  - Cambiar a otra rama:
+    git checkout <nombre_rama_a_cambiar>
+
+  - Eliminar una rama:
+    git branch -d <nombre_de_rama_a_borrar>
+
+  - o si no ha sido mezclado retornara error entonces para borrarla asi no haya sido mezclado sera:
+    git branch -D <nombre_de_rama_a_borrar>
+
+  - Para hacer un merge o mezcla, primero debe pararse en la rama "principal" a la cual le quieres agregar los cambios de la otra rama, y hacer:
+    git merge <nombre_de_rama_a_mezclar>
+
+  - Para subir cambios(Push)
+    git push origin master
+
+  - Para bajar cambios(Pull)
+    git pull origin master
+
+  - Para clonar:
+    git clone [URL PROYECTO].
+
+* Comandos para merge (CON CUIDADO): Ejemplo rama xx y dev
+
+  - Guardar cambios en nuestra rama, local y remota.
+    git checkout xx
+    git add .
+    git commit -m "name commit"
+    git pull origin xx
+    git push origin xx
+
+  - Moverse a la rama dev y hacer pull 
+    git checkout dev
+    git pull origin dev
+    
+  - Moverse a xx y hacer rebase de la rama dev
+    git checkout xx
+    git rebase dev
+
+  - Solventar conflictos por gitkraken y luego continuar
+    git add .
+    git rebase --continue
+
+  . Cuando se solucione todo vamos a dev y mezclo con xx
+    git checkout dev
+    git merge xx
+
+  - Por ultimo subimos la rama dev a remota
+    git push origin dev
