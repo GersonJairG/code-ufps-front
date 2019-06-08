@@ -1,0 +1,22 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "FRONTEND DEL PROYECTO CODE-UFPS:",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GersonJairG/code-ufps-front.git"
+  },
+  "author": "Gerson Guerrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GersonJairG/code-ufps-front/issues"
+  },
+  "homepage": "https://github.com/GersonJairG/code-ufps-front#readme",
+  "dependencies": {
+    "electron": "^5.0.2"
+  }
+}
