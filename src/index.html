@@ -5,8 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Code UFPS</title>
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/config.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
 <body>
-  <h1> Hello Guys from Electron </h1>
+  <nav class="navbar navbar-main navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/code.png" width="30" height="30" class="d-inline-block align-top">
+      CodeUFPS
+    </a>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 files-section">Files</div>
+      <div class="col-9 code-section">
+        <nav class="navbar navbar-tabs navbar-expand navbar-dark">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">File 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">File 2</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <textarea class="code-editor" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/jquery/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
