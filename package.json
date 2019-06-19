@@ -18,5 +18,8 @@
   "homepage": "https://github.com/GersonJairG/code-ufps-front#readme",
   "dependencies": {
     "electron": "^5.0.2"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0"
   }
 }
