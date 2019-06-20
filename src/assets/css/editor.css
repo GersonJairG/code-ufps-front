@@ -19,7 +19,7 @@
 }
 
 .background {
-  background-image: url('../img/background-editor.jpeg');
+  background-image: url('../img/editor/background.jpeg');
   height: 100vh;
   width: 100%;
   position: absolute;
