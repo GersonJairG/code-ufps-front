@@ -1,17 +1,34 @@
 {
-  "name": "front",
+  "name": "CODE-UFPS",
   "version": "1.0.0",
-  "description": "FRONTEND DEL PROYECTO CODE-UFPS:",
+  "description": "proyecto de trabajo colaborativo 2019",
   "main": "index.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "pack": "build --dir",
+    "dist": "build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GersonJairG/code-ufps-front.git"
   },
-  "author": "Gerson Guerrero",
+  "author": "Estudiantes arquitectura de software 2019-I",
   "license": "ISC",
+  "build": {
+    "appId": "CODE-UFPS 1.0",
+    "asar": true,
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "build/logo.icns"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/logo.ico"
+    }
+  },
   "bugs": {
     "url": "https://github.com/GersonJairG/code-ufps-front/issues"
   },
