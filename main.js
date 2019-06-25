@@ -35,7 +35,7 @@ function viewDashboard()
   nuevoProducto = new BrowserWindow({
     width : 1200,
     height : 728,
-    title : 'Agregar Nuevo producto'
+    title : 'View Dashboard'
   });
  
   nuevoProducto.loadURL(url.format({
