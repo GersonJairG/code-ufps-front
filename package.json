@@ -38,6 +38,7 @@
     "electron-reload": "^1.4.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.9.0"
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "electron-builder": "^20.44.4"
   }
 }
