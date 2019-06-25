@@ -33,13 +33,13 @@ app.on('ready', createWindow);
 function viewDashboard()
 {
   nuevoProducto = new BrowserWindow({
-    width : 400,
-    height : 300,
+    width : 1200,
+    height : 728,
     title : 'Agregar Nuevo producto'
   });
  
   nuevoProducto.loadURL(url.format({
-    pathname : path.join(__dirname,'views/dashboard.html'),
+    pathname : path.join(__dirname,'src/views/dashboard.html'),
     protocol : 'file',
     slashes  : true
   }));
