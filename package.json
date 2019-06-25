@@ -2,7 +2,7 @@
   "name": "CODE-UFPS",
   "version": "1.0.0",
   "description": "proyecto de trabajo colaborativo 2019",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron main.js",
     "pack": "build --dir",
