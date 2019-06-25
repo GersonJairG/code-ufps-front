@@ -16,6 +16,7 @@
 .container-form {
   background: white;
   width: 45%;
+  min-height: 380px;
   height: 70%;
   min-width: 340px;
   max-width: 480px;
